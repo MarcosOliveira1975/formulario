@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 465px;
+    background: #293241;
+    position: absolute;
+    z-index: -1;
+}
+
+.page {
+    width: 750px;
+    margin: auto;
+
+}
+.top {
+    width: 750px;
+    height: 133px;
+    background: #F67669;
+    border-radius: 20px 20px 0 0;
+    color: white;
+    font-family: 'Staatliches';
+    font-size: 24px;
+    line-height: 34px;
+    padding: 50px 275px;
+    position: absolute;
+    top: 332px;
+}
+
+header {
+    text-align: center;    
+}
+
+
+header h1 {
+    text-transform: uppercase;
+    font-family: 'Staatliches';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45px;
+    color: white;
+    margin-top: 107px;
+}
+
+header p {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+header .top-image {
+    width: 225px;
+    margin-bottom: 32px;
+}
+
+form {
+    height: 1075px;
+    padding: 32px 64px;
+    margin-top: 150px;
+}
+
+form .input-wrapper-name {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+form .input-wrapper-name .nome-sobrenome {
+    display: block;
+}
+
+form .input-wrapper-name .nome-sobrenome label {
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+    margin-top: 32px;
+}
+
+form .input-wrapper-name input {
+    width: 300px;
+    height: 56px;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    margin-top: 9px;
+    padding-left: 16px;
+
+}
+
+.input-wrapper-name .nome-sobrenome input:invalid {
+    border: 2px solid red;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.email label {
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+    margin-top: 15px;
+}
+
+.email label span {
+    font-weight: 400;
+    font-size: 12px;
+    color: #C1BCCC;
+    margin-left: 7px;
+}
+
+.email label span:hover,
+.agenda .date .input-wrapper span:hover {
+    color: #706e74;
+}
+
+.email input {
+    height: 56px;
+    border-radius: 8px;
+    margin-top: 9px;
+    padding-left: 16px;
+}
+
+.mentor {
+    margin-top: 32px;
+    border: 0;
+}
+
+.mentor .input-wrapper {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mentor legend,
+.agenda legend {
+    text-transform: uppercase;
+    border-bottom: 1px solid #E6E6F0;
+    width: 622px;
+    margin-bottom: 32px;
+    padding-bottom: 7px;
+    font-family: 'Staatliches';
+    font-size: 24px;
+    line-height: 34px;
+    color: #253B51;
+    text-align: center;
+}
+
+.mentor .input-wrapper label {
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+    margin-top: 15px;
+}
+
+.mentor .input-wrapper .info {
+    width: 300px;
+    height: 56px;
+    border-radius: 8px;
+    margin-top: 9px;
+    padding-left: 16px;
+    font-family: 'Poppins';
+}
+
+.mentor .input-wrapper .feedback {
+    width: 608px;
+    height: 177px;
+    border-radius: 8px;
+    margin-top: 9px;
+    padding-left: 16px;
+}
+
+.mentor .input-wrapper-checkbox {
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.mentor .input-wrapper-checkbox input {
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+}
+
+
+.agenda {
+    margin-top: 32px;
+    border: 0;
+}
+
+.date {
+    margin-top: 36px;
+
+}
+
+.agenda .date {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.agenda .date label {
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+    margin-top: 15px;
+}
+
+.agenda .date .input-wrapper span {
+    font-weight: 400;
+    font-size: 12px;
+    color: #C1BCCC;
+    margin-left: 7px;
+}
+
+.agenda .date .input-wrapper > input {
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    margin-top: 9px;
+    padding-left: 16px;
+}
+
+.date .input-wrapper > input {
+    width: 140px;
+    height: 56px;
+    border-radius: 8px;
+    margin-top: 9px;
+    padding-left: 16px;
+}
+
+button {
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+    gap: 10px;
+    width: 622px;
+    height: 51px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    background: #F67669;
+    border-radius: 8px;
+    border: 0;
+    color: white;
+    font-family: 'Staatliches';
+    font-size: 20px;
+    line-height: 26px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background: #d12613;
+}
